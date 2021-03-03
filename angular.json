@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "projeto-GPS"
+  "defaultProject": "projeto-GPS",
+  "cli": {
+    "analytics": "3926f23e-a5be-4390-84bc-9cbae6dc0d2f"
+  }
 }

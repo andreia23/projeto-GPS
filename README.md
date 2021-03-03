@@ -1,4 +1,7 @@
-# ProjetoGPS
+# Projeto-GPS
+Project developed for the activity of Software Project Management: 2020.2 IFPB - Federal Institute of Education, Science and Technology of Paraíba.
+
+The GPS-Project manages groups for games helping to decide time for games, and find new players.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
 
