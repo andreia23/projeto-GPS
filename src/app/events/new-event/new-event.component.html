@@ -1,0 +1,22 @@
+<main class="container">
+    <form class="clearfix">
+        <div class="mb-3">
+          <label for="titulo" class="form-label">Título</label>
+          <input type="text" id="titulo" class="form-control" [(ngModel)]="newEvent.titulo" name="titulo">
+        </div>
+        <div class="mb-3">
+            <label for="datahora" class="form-label">Data e Hora</label>
+            <input id="datahora" type="datetime-local" class="form-control" name="datahora" [(ngModel)]="newEvent.data">
+        </div>
+        <div class="mb-3">
+            <label for="jogo" class="form-label">Jogo</label>
+            <input type="text" id="jogo" class="form-control" [(ngModel)]="newEvent.jogo" name="jogo">
+        </div>
+        <div class="mb-3">
+            <label for="descricao" class="form-label">Descricao</label>
+            <textarea class="form-control" id="descricao" [(ngModel)]="newEvent.descricao" name="descricao"></textarea>
+        </div>
+        
+        <button class="btn btn-primary float-end" (click)="submit()">Adicionar</button>
+      </form>
+</main>
