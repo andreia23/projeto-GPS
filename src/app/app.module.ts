@@ -4,10 +4,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FirestoreModule} from './firestore/firestore.module';
 import { EventsModule } from './events/events.module';
+import { LoginEventsComponent } from './login-events/login-events.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginEventsComponent,
+
   ],
   imports: [
     EventsModule,
