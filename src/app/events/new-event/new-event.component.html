@@ -1,6 +1,6 @@
 <main class="container">
     <form class="clearfix">
-        <div class="mb-3">
+        <div class="mb-3 divNew" >
           <label for="titulo" class="form-label">Título</label>
           <input type="text" id="titulo" class="form-control" [(ngModel)]="newEvent.titulo" name="titulo">
         </div>
@@ -16,7 +16,12 @@
             <label for="descricao" class="form-label">Descricao</label>
             <textarea class="form-control" id="descricao" [(ngModel)]="newEvent.descricao" name="descricao"></textarea>
         </div>
+
+        <div class="form-group" class = "botao"> 
+            <button class="btn btn-primary float-end" (click)="submit()">Adicionar</button>
+           
+          </div>
         
-        <button class="btn btn-primary float-end" (click)="submit()">Adicionar</button>
+       
       </form>
 </main>
