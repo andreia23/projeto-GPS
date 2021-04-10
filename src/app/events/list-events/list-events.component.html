@@ -1,10 +1,19 @@
 <main class="d-flex flex-column">
-    <div class="list-group" *ngIf="eventos">
+    <div class="list-group" *ngIf="eventos" >
         <a *ngFor="let e of eventos | keyvalue" class="list-group-item list-group-item-action">
             <h5>{{e.value.titulo}}</h5>
             <span>{{e.value.descricao}}</span>
+            <br/>
+          <button>
+              Excluir
+          </button>
+
         </a>
     </div>
-    <a href="/new" class="btn btn-primary align-self-end mt-2">Novo</a>
+
+    <div class="form-group" class="botao"> 
+        <a href="/new" class="btn btn-primary align-self-end mt-2">Novo</a>
+       
+   </div>
 
 </main>
