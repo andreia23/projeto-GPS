@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
+import {map} from 'rxjs/operators';
 import { Evento } from '../model/Evento';
 
 @Injectable({
@@ -32,5 +33,12 @@ export class FirestoreService {
   editEvent(e: Evento)
   {
     return this.events.doc(e.id).update(e);
+  }
+
+  pesquisarPorId(id: string)
+  {
+    return this.events.doc(id).valueChanges({idField:"id"}).pipe(map(doc => {
+      return {...doc};
+    }));
   }
 }
