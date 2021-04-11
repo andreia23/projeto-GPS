@@ -23,4 +23,9 @@ export class ListEventsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  delete(id: string)
+  {
+    this.firestore.deleteEvent(id);
+  }
+
 }

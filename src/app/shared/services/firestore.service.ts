@@ -23,4 +23,14 @@ export class FirestoreService {
   {
     return this.events.snapshotChanges();
   }
+
+  deleteEvent(id: string)
+  {
+    return this.events.doc(id).delete();
+  }
+
+  editEvent(e: Evento)
+  {
+    return this.events.doc(e.id).update(e);
+  }
 }
