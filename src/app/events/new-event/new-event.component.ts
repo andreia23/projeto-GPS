@@ -17,7 +17,7 @@ export class NewEventComponent implements OnInit {
 	    data: "",
 	    jogo: "",
 	    descricao: ""
-    }
+    };
    }
 
   ngOnInit(): void {

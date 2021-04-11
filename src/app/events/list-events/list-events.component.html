@@ -1,6 +1,6 @@
 <main class="d-flex flex-column">
     <div class="list-group" *ngIf="eventos" >
-        <a *ngFor="let e of eventos | keyvalue" class="list-group-item list-group-item-action">
+        <a *ngFor="let e of eventos | keyvalue" class="list-group-item list-group-item-action" (click)="exibirEvento(e.key)">
             <h5>{{e.value.titulo}}</h5>
             <span>{{e.value.descricao}}</span>
             <br/>
@@ -11,9 +11,9 @@
         </a>
     </div>
 
-    <div class="form-group" class="botao"> 
+    <div class="form-group" class="botao">
         <a href="/new" class="btn btn-primary align-self-end mt-2">Novo</a>
-       
+
    </div>
 
 </main>

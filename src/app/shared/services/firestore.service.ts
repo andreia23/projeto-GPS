@@ -10,7 +10,7 @@ import { Evento } from '../model/Evento';
 export class FirestoreService {
 
   events: AngularFirestoreCollection<Evento>;
-  
+
   constructor(private firestore: AngularFirestore) {
     this.events = firestore.collection<Evento>('eventos');
   }
@@ -37,7 +37,7 @@ export class FirestoreService {
 
   pesquisarPorId(id: string)
   {
-    return this.events.doc(id).valueChanges({idField:"id"}).pipe(map(doc => {
+    return this.events.doc(id).valueChanges({idField: 'id'}).pipe(map(doc => {
       return {...doc};
     }));
   }
