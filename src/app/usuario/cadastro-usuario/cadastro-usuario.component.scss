@@ -1,0 +1,28 @@
+.container {
+  max-width: 650px;
+  margin-left:350px;
+  background-color:white;
+  margin-top: 50px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px #888888;
+  padding: 50px;
+
+}
+
+input {
+  margin-top: 10px;
+}
+
+.botao {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+button{
+  background-color: #EE7C7C;
+  border: none;
+
+}
