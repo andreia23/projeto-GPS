@@ -1,12 +1,31 @@
 .divPrincipal {
   max-width: 650px;
   margin-left:350px;
-  background-color: azure;
-  margin-top: 50px;
-  text-align: justify;
+  background-color:white;
+  margin-top: 20px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px #888888;
+  padding: 10px;
 }
 
   .input1 {
     margin-top: 10px;
 }
 
+.input2 {
+  margin-top: 5px;
+}
+
+.botao {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+}
+button{
+  background-color: #EE7C7C;
+  border: none;
+
+}
