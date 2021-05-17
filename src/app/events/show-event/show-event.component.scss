@@ -11,6 +11,12 @@
 
 input {
   margin-top: 10px;
+  border-radius: 50px;
+  background-color: #e1e2e2;
+}
+#descricao {
+  background-color: #e1e2e2;
+  border-radius: 50px;
 }
 
 .botao {
@@ -25,5 +31,7 @@ button{
   background-color: #EE7C7C;
   border: none;
   margin: 10px;
+  border-radius: 50px;
+  padding: 0.3rem 2rem;
 
 }

@@ -1,12 +1,26 @@
-<main class="d-flex flex-column">
+<main class="d-flex flex-column container">
     <div class="list-group" *ngIf="eventos" >
-        <a *ngFor="let e of eventos | keyvalue" class="list-group-item list-group-item-action" (click)="exibirEvento(e.key)">
-            <h5>{{e.value.titulo}}</h5>
-            <span>{{e.value.descricao}}</span>
-            <br/>
-          <button class="btn btn-secondary align-self-end" (click)="delete(e.key)">
+      <div class="titulo">
+
+        <h3>Reuniões</h3>
+      </div>
+        <a *ngFor="let e of eventos | keyvalue" class="list-group-item card-lista list-group-item-action">
+          <div>
+            <h5>Título: {{e.value.titulo}}</h5>
+            <span>Descriçã: {{e.value.descricao}}</span>
+          </div>
+          <div class="botoes">
+
+            <button class="btn btn-outline-secondary align-self-end" (click)="exibirEvento(e.key)">
+              Detalhes
+            </button>
+            <button class="btn btn-outline-secondary align-self-end" (click)="exibirEvento(e.key)">
+              Editar
+            </button>
+            <button class="btn btn-outline-danger align-self-end" (click)="delete(e.key)">
               Excluir
-          </button>
+            </button>
+          </div>
 
         </a>
     </div>
