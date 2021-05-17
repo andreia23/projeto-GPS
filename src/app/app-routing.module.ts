@@ -12,10 +12,12 @@ const routes: Routes = [
   {path: 'new', component: NewEventComponent},
   {path: 'list', component: ListEventsComponent},
   {path: 'login', component: LoginEventsComponent},
+  {path: '', component: LoginEventsComponent},
   {path: 'reuniao', component: ReuniaoEventsComponent},
   {path: 'exibirevento/:id', component: ShowEventComponent},
   {path: 'cadastrarusuario', component: CadastroUsuarioComponent},
-  {path: '', redirectTo: 'login', pathMatch: 'full'}
+  // {path: '', redirectTo: 'login', pathMatch: 'full'}
+
 ];
 
 @NgModule({
