@@ -5,6 +5,7 @@ import { NewEventComponent } from './events/new-event/new-event.component';
 import {LoginEventsComponent} from './login-events/login-events.component';
 import { ReuniaoEventsComponent } from './reuniao-events/reuniao-events.component';
 import {ShowEventComponent} from './events/show-event/show-event.component';
+import {CadastroUsuarioComponent} from './usuario/cadastro-usuario/cadastro-usuario.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'login', component: LoginEventsComponent},
   {path: 'reuniao', component: ReuniaoEventsComponent},
   {path: 'exibirevento/:id', component: ShowEventComponent},
-  {path: '', redirectTo: 'list', pathMatch: 'full'}
+  {path: 'cadastrarusuario', component: CadastroUsuarioComponent},
+  {path: '', redirectTo: 'login', pathMatch: 'full'}
 ];
 
 @NgModule({

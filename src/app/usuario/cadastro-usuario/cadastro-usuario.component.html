@@ -1,0 +1,26 @@
+<main class="container">
+  <form class="clearfix">
+    <div class="mb-3 divNew" >
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" id="nome" class="form-control" [(ngModel)]="newUsuario.nome" name="nome">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="text" id="email" class="form-control" [(ngModel)]="newUsuario.email" name="email">
+    </div>
+    <div class="mb-3 divNew" >
+      <label for="senha" class="form-label">Senha</label>
+      <input type="text" id="senha" class="form-control" [(ngModel)]="newUsuario.senha" name="senha">
+    </div>
+    <div class="mb-3">
+      <label for="idade" class="form-label">Idade</label>
+      <input type="text" id="idade" class="form-control" [(ngModel)]="newUsuario.idade" name="idade">
+    </div>
+    <div class="form-group" class = "botao">
+      <button class="btn btn-primary float-end" (click)="cadastrar()">Cadastrar</button>
+
+    </div>
+
+
+  </form>
+</main>
