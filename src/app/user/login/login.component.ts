@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/shared/services/auth.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,8 +9,12 @@ import { AuthService } from 'src/app/shared/services/auth.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private auth : AuthService) { }
+  constructor(private auth : AuthService, private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  cadastrarUser() {
+    this.router.navigate(['/list']);
   }
 }

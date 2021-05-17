@@ -6,20 +6,21 @@ import {FirestoreModule} from './firestore/firestore.module';
 import { EventsModule } from './events/events.module';
 import { ReuniaoEventsComponent } from './reuniao-events/reuniao-events.component';
 import { UsuarioModule } from './usuario/usuario.module';
+import {LoginComponent} from './user/login/login.component';
+import {UserModule} from './user/user.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginEventsComponent,
     ReuniaoEventsComponent
-
   ],
   imports: [
     EventsModule,
     BrowserModule,
     AppRoutingModule,
     FirestoreModule,
-    UsuarioModule
+    UsuarioModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

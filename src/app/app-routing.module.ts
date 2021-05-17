@@ -11,8 +11,8 @@ import {CadastroUsuarioComponent} from './usuario/cadastro-usuario/cadastro-usua
 const routes: Routes = [
   {path: 'new', component: NewEventComponent},
   {path: 'list', component: ListEventsComponent},
-  {path: 'login', component: LoginEventsComponent},
-  {path: '', component: LoginEventsComponent},
+  {path: 'login', component: LoginComponent},
+  {path: '', component: LoginComponent},
   {path: 'reuniao', component: ReuniaoEventsComponent},
   {path: 'exibirevento/:id', component: ShowEventComponent},
   {path: 'cadastrarusuario', component: CadastroUsuarioComponent},
